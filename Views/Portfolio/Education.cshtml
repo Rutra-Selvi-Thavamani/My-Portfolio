@@ -1,0 +1,30 @@
+﻿<div class="">
+    <h1 class="borders">@ViewBag.Education</h1><hr />
+    @foreach (var edut in Model)
+    {
+        ViewBag.Title = "Education";
+
+<div class="educt">
+    <ul>
+        <li><h4><b class="light">Collegename</b>: @edut.Collegename</h4></li>
+        <br />
+        <li><h4><b class="light">Location</b>: @edut.Location</h4></li>
+        <br />
+        <li><h4><b class="light">Year</b>: @edut.Year</h4></li>
+        <br />
+        <li><h4><b class="light">Specialization</b>: @edut.Specialization</h4></li>
+        <br />
+        <li><h4><b class="light">Aggregate</b>: @edut.Aggregate</h4></li>
+        <br />
+        <hr />
+        <hr />
+
+    </ul>
+</div>
+
+    }
+</div>
+
+
+
+

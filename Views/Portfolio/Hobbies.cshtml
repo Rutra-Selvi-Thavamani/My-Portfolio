@@ -1,0 +1,17 @@
+﻿
+@foreach(var hobby in Model)
+{
+    ViewBag.Title = "Hobbies";
+     <h1 class="borders">@ViewBag.Hobbies </h1 ><br/><hr/>
+
+     <ul>
+         <b>
+             <li><p><h3><b>Personal Interest:</b></h3><h4>@hobby.PersonalInterest</h4></p></li><br/>
+             <li><p><h3><b>Regular Hobbies :</b></h3><h4>@hobby.RegularHobbies</h4></p></li><hr/>
+         </b>
+     </ul>
+   
+
+}
+
+

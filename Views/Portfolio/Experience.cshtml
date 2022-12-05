@@ -1,0 +1,27 @@
+﻿<div class="sec">
+    @foreach (var exp in Model)
+    {
+        ViewBag.Title = "Experience";
+        <h2 style="background-color:lightgrey; padding:10px; border-radius:10px; font-family:'Arial monospaced for SAP'">@ViewBag.Experience</h2><br /><hr />
+        <h4>
+            <ul>
+                <li><b class="exp">Company Name :</b>@exp.CompanyName</li>
+                <br />
+                <li><b class="exp">Location: </b>@exp.Location</li>
+                <br />
+                <li><b class="exp">Location: </b>@exp.Location</li>
+                <br />
+                <li><b class="exp">Designation: </b>@exp.Designation</li>
+                <br />
+                <li><b class="exp">Year: </b>@exp.Year</li>
+                <br />
+                <li><b class="exp">Salary: </b>@exp.Salary</li>
+                <br />
+                <li><b class="exp">Description:</b>@exp.Description</li>
+            </ul><hr />
+        </h4>
+
+    }
+</div>
+
+

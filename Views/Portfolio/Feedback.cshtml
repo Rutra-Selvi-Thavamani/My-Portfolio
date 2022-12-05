@@ -1,0 +1,25 @@
+﻿<h3><b>Feedback Form</b></h3>
+@using (Html.BeginForm("Feedback", "Portfolio", FormMethod.Post))
+{
+    ViewBag.Title = "Feedback";
+    <table>
+        <tr>
+            <td>Enter ID:</td>
+            <td>@Html.TextBox("Id")</td>
+        </tr>
+        <tr>
+            <td>Enter Name:</td>
+            <td>@Html.TextBox("Name")</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+}
+<h4 style="color:blue">
+    ID: @ViewBag.Id<br/>
+    Name: @ViewBag.Name<br/>
+</h4>
+
+
+

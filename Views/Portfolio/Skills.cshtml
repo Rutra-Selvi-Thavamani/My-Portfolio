@@ -1,0 +1,22 @@
+﻿<div class="skill">
+    @foreach (var skill in Model)
+    {
+        ViewBag.Title = "Skills";
+        <h1 class="borders">@ViewBag.Skills</h1><br /><hr />
+        <ul>
+            <li><h3><b class="bold">Primary Skills:</b></h3><h4>@skill.PrimarySkills</h4></li>
+            <br />
+            <li><h3><b class="bold">Secondary Skills:</b></h3><h4>@skill.SecondarySkills</h4></li>
+            <br />
+            <li><h3><b class="bold">Technical SKills</b></h3><h4>@skill.TechnicalSkills</h4></li>
+            <br />
+            <li><h3><b class="bold">Key Skills</b></h3><h4>@skill.KeySkills</h4></li>
+            <br />
+
+        </ul>
+    }
+
+</div>
+
+
+
